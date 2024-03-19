@@ -54,47 +54,51 @@
  */
 
 //Solution
-// const alexeGrades = [90, 80, 95];
-// const saraGrades = [89, 76, 98];
-// const nanacyGrades = [42, 98, 83];
+const alexeGrades = [90, 79, 95];
+const saraGrades = [89, 77, 98];
+const nanacyGrades = [42, 98, 83];
 
-//* Calculing the avg for every student
-//* using redulce method which reduces the array to a single value
-// const alexAverage = (
-//   alexeGrades.reduce((first, currentValue) => first + currentValue, 0) /
-//   alexeGrades.length
-// ).toFixed(2);
-// console.log("Alex's average: ", alexAverage);
+/*
+ * Calculing the avg for every student
+ * using redulce method which reduces the array to a single value
+ */
+const alexAverage = (
+  alexeGrades.reduce((first, currentValue) => first + currentValue, 0) /
+  alexeGrades.length
+).toFixed(2);
+console.log("Alex's average: ", alexAverage);
 
-// const saraAverage = (
-//   saraGrades.reduce((first, currentValue) => first + currentValue, 0) /
-//   saraGrades.length
-// ).toFixed(2);
-// console.log("Sara's average: ", saraAverage);
-//
-// const nancyAverage = (
-//   nanacyGrades.reduce((first, currentValue) => first + currentValue, 0) /
-//   nanacyGrades.length
-// ).toFixed(2);
-// console.log("Nancy's average: ", nancyAverage);
+const saraAverage = (
+  saraGrades.reduce((first, currentValue) => first + currentValue, 0) /
+  saraGrades.length
+).toFixed(2);
+console.log("Sara's average: ", saraAverage);
 
-//* Find the highest avg
-// let highestAVG;
-// switch (true) {
-//   case alexAverage > saraAverage && alexAverage > nancyAverage:
-//     highestAVG = "Alex has the highest AVG";
-//     break;
-//   case saraAverage > alexAverage && saraAverage > nancyAverage:
-//     highestAVG = "Sara has the highest AVG";
-//     break;
-//   case nancyAverage > alexAverage && nancyAverage > saraAverage:
-//     highestAVG = " Nancy has the highest AVG";
-//     break;
-// }
-//
-// console.log(highestAVG);
-//
-//
+const nancyAverage = (
+  nanacyGrades.reduce((first, currentValue) => first + currentValue, 0) /
+  nanacyGrades.length
+).toFixed(2);
+console.log("Nancy's average: ", nancyAverage);
+
+// Find the highest avg
+let highestAVG;
+switch (true) {
+  case alexAverage > saraAverage && alexAverage > nancyAverage:
+    highestAVG = "Alex has the highest AVG";
+    break;
+  case saraAverage > alexAverage && saraAverage > nancyAverage:
+    highestAVG = "Sara has the highest AVG";
+    break;
+  case nancyAverage > alexAverage && nancyAverage > saraAverage:
+    highestAVG = " Nancy has the highest AVG";
+    break;
+  default:
+    highestAVG = "There is a tie";
+    break;
+}
+
+console.log(highestAVG);
+
 //QUIZ 3: While Loops
 /*
  *
