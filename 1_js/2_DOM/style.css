@@ -1,0 +1,20 @@
+ul :hover {
+  cursor: pointer;
+}
+
+.addClass {
+  width: 50%;
+  height: 20px;
+  background: red;
+  color: white;
+  border: 10px solid black;
+}
+
+.listParent {
+  background-color: blue;
+}
+
+.listItem {
+  color: #000;
+  text-decoration: line-through;
+}
