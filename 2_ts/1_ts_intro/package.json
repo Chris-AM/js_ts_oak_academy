@@ -1,0 +1,12 @@
+{
+  "name": "tsc_intro",
+  "version": "0.0.1",
+  "description": "typescript introduction with fetch",
+  "main": "index.js",
+  "author": "Chris-AM",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "axios": "^1.6.8"
+  }
+}
