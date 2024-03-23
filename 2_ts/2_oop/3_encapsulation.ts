@@ -3,7 +3,7 @@ export class EncapsulatedPlayer {
   private isInvincible: boolean;
   private health: number;
   private speed: number;
-  private crush: EncapsulatedPlayer;
+  private crush: EncapsulatedPlayer | null;
 
   // Constructor is a special method that is called when an object is created
   // It is used to initialize the object's properties
@@ -18,7 +18,7 @@ export class EncapsulatedPlayer {
     this.isInvincible = false;
     this.health = 0;
     this.speed = 0;
-    this.crush = new EncapsulatedPlayer();
+    this.crush = null;
   }
   /*!
    * 2.A. Encapsulating properties
@@ -73,7 +73,7 @@ export class EncapsulatedPlayer {
   setCrush(crush: EncapsulatedPlayer) {
     this.crush = crush;
   }
-  getCrush(): EncapsulatedPlayer {
+  getCrush(): EncapsulatedPlayer | null {
     return this.crush;
   }
 
@@ -110,6 +110,6 @@ const marioName = mario.getName();
 const marioSpeed = mario.getSpeed();
 const marioHealth = mario.getHealth();
 const marioCrush: EncapsulatedPlayer | string =
-  mario.getCrush() === undefined ? "No crush" : mario.getCrush().getName();
+  mario.getCrush() === null ? "No crush" : mario.getCrush()!.getName();
 //* PRO-TIP: Add params as object to console.log for better reading
 // console.log({ marioName, marioSpeed, marioHealth, marioCrush });
