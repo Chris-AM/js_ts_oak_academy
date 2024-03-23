@@ -8,7 +8,8 @@ import { EncapsulatedPlayer } from "./3_encapsulation";
 // Mario IS-A EncapsulatedPlayer
 class Mario extends EncapsulatedPlayer {
   // Mario HAS-A hat type
-  private hatType: string;
+  private hatType: string; // must use getter and setter methods to access this property
+  // protected hatType: string; // protected access modifier
 
   // The constructor method is a special method
   // of a class for creating and initializing an object of that class
