@@ -5,6 +5,21 @@ export class EncapsulatedPlayer {
   private speed: number;
   private crush: EncapsulatedPlayer;
 
+  // Constructor is a special method that is called when an object is created
+  // It is used to initialize the object's properties
+  // The constructor method is optional
+  // If you don't provide a constructor method
+  // TypeScript will provide a default constructor for you
+  // The default constructor doesn't do anything
+  // It's just an empty method
+  //? PRO-TIP: You can use the constructor method to initialize the object's properties
+  constructor() {
+    this.name = "";
+    this.isInvincible = false;
+    this.health = 0;
+    this.speed = 0;
+    this.crush = new EncapsulatedPlayer();
+  }
   /*!
    * 2.A. Encapsulating properties
    */
