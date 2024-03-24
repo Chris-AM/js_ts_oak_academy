@@ -138,3 +138,4 @@ console.log("Bowser's data => ", {
   bowsersHealth,
   bowsersMoto,
 });
+bowser.greet();
