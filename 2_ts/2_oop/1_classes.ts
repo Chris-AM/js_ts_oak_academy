@@ -5,7 +5,7 @@
 
 // class ClassName {} is a class declaration
 export class Player {
-  name: string; // public
+  name: string;
   isInvincible: boolean;
   health: number;
   speed: number;
